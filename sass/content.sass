@@ -1,0 +1,77 @@
+@import 'responsive'
+
+.content	
+	margin-bottom: 70px
+	&__inner
+		position: relative	
+		padding-bottom: 280px	
+		+media(lgs)
+			padding-bottom: 0px
+
+	&__text
+		position: relative
+		z-index: 2
+		max-width: 600px
+		margin-bottom: 90px	
+		+media(lgs)
+			max-width: 100%
+			margin-bottom: 50px
+		p
+			font-size: 18px	
+			line-height: 1.67	
+			color: #fff
+			+media(md)
+				font-size: 17px
+				line-height: 1.5
+			+media(sm)
+				font-size: 16px
+
+		h1
+			font-size: 24rem
+
+		h2
+			font-size: 22rem
+
+		h3
+			font-size: 18rem
+
+		h4, h5, h6
+			font-size: 16rem
+			line-height: 1.29	
+
+		h1, h2, h3, h4, h5, h6
+			color: #fff
+			padding-bottom: 2px
+			font-weight: 500
+
+		ul, ol
+			padding: 0px
+			margin: 0px
+			padding-bottom: 1.5em
+			li
+				position: relative
+				font-size: 1.25rem
+				line-height: 1.25
+				color: #fff
+				margin-bottom: 5px
+				font-weight: normal
+
+		ol
+			li
+				list-style-position: inside
+
+		a
+			display: inline-block
+			color: #fff
+			margin-bottom: 12px
+
+	&__bg
+		position: absolute
+		bottom: 0px
+		right: -60px
+		+media(desc)
+			right: 0px
+		+media(lgs)
+			position: static
+		img
+			display: block

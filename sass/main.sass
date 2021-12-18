@@ -1,0 +1,167 @@
+@import 'responsive'
+
+body
+	margin: 0
+	padding: 0
+	width: 100%
+	min-height: 100vh
+	overflow-x: hidden
+	//-webkit-text-size-adjust: 100%
+	color: #363636
+	background-color: #f8f8f8
+	position: relative
+	font-size: 16px
+	line-height: 1.2
+	font-weight: normal
+	font-style: normal
+	font-family: Roboto
+
+* 
+	box-sizing: border-box
+
+*::after,
+*::before
+	box-sizing: border-box
+
+.visually-hidden
+	position: absolute
+	width: 1px
+	height: 1px
+	margin: -1px
+	bottom: 0
+	padding: 0
+	white-space: nowrap
+	clip-path: inset(100%)
+	clip: rect(0 0 0 0)
+	overflow: hidden
+
+.wrap
+	background: linear-gradient(76.52deg, #4B4763 32.61%, #0F2742 94.09%)
+	.title
+		color: #fff
+		padding-bottom: 55px	
+
+	&--desc
+		background: #ed7672
+		.main-header
+			padding-bottom: 85px
+
+		.main-header__list
+			+media(sm)
+				background: #ed7672
+
+		.main-header__link--active
+			color: #4b4763
+
+		.main-header__link:hover:not(.main-header__link--active)
+			color: #4b4763
+
+		.main-header__btn
+			color: #fff
+			background: rgba(255, 255, 255, 0.2)
+			border-color: #fff
+
+	&--inner
+		background: #f8f8f8
+		.main-header
+			padding-bottom: 85px
+
+		.main-header__list
+			+media(sm)
+				background: #f8f8f8
+
+		.main-header__link,
+		.main-header__desc,
+		.main-header__description
+			color: #4b4763
+
+		.line-burger
+			background-color: #4b4763
+			&:after,
+			&:before
+				background-color: #4b4763
+
+img
+	max-width: 100%
+	height: auto
+
+.svg-about
+	display: none
+
+
+.container
+	max-width: 1240px
+	padding: 0 20px
+	margin: 0 auto
+	+media(sm)
+		padding: 0 10px
+
+	&--write
+		max-width: 620px
+
+	&--elem
+		max-width: 1440px
+
+.title
+	font-size: 72px
+	line-height: 1.2
+	color: #0F2742
+	text-transform: uppercase
+	font-weight: 200
+	+media(lgm)
+		font-size: 58px
+	+media(sm)
+		font-size: 40px
+
+.input	
+	display: block
+	width: 100%
+	font-size: 18px
+	color: #fff
+	background-color: rgba(255, 255, 255, 0.2)
+	border: 2px solid #fff
+	box-sizing: border-box
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1)
+	border-radius: 25px
+	padding: 12px 20px
+	&::placeholder
+		color: #fff
+	&--area
+		min-height: 200px
+		resize: none
+
+	&.form-fail
+		border-color: #ff0000	
+
+.breadcrumbs
+	&__list
+		display: flex	
+		flex-wrap: wrap
+		align-items: center
+		padding-bottom: 35px
+		li
+			display: block
+			cursor: default
+			margin-bottom: 15px
+			&:not(:last-child)
+				margin-right: 40px
+				transition: 0.3s color
+				position: relative
+				&:after
+					position: relative
+					right: -20px
+					line-height: 1
+					content: '/'
+					color: rgba(255, 255, 255, 0.5)
+
+
+		li, a
+			font-size: 16px
+			line-height: 1.2
+			color: rgba(255, 255, 255, 0.5)
+			text-transform: uppercase
+			transition: 0.25s color
+
+		a
+			&:hover
+				color: #fff

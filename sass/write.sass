@@ -1,0 +1,50 @@
+@import 'responsive'
+
+.write
+	background: linear-gradient(76.52deg, #4B4763 32.61%, #0F2742 94.09%)
+	padding-top: 70px
+	padding-bottom: 96px
+	+media(mdx)
+		padding-bottom: 76px
+	+media(sm)
+		padding-bottom: 60px
+	.title
+		color: #fff
+
+	&__wrap
+		padding-top: 50px
+
+	&__item
+		padding-bottom: 25px
+		&:last-child
+			padding-bottom: 40px
+
+	&__btn
+		cursor: pointer
+		display: block
+		max-width: 178px
+		width: 100%
+		min-height: 50px
+		font-size: 18px
+		line-height: 1.2
+		color: #ed7672
+		background: rgba(237, 118, 114, 0.2)
+		border: 2px solid #ed7672
+		box-sizing: border-box
+		border-radius: 25px
+		padding: 12px 10px	
+		transition: 0.25s background-color, 0.25s color
+		font-style: normal
+		font-family: Roboto
+		font-family: 700
+		&:disabled
+			text-decoration: line-through
+
+		&:hover:not(:disabled)
+			background-color: #ed7672
+			color: #fff
+			
+	&__error
+		color: #ff0000	
+		padding-bottom: 20px
+		font-weight: 700

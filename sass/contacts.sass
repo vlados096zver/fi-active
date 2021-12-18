@@ -1,0 +1,60 @@
+@import 'responsive'
+
+.contacts
+	padding-top: 65px
+	.title
+		position: relative
+		text-align: center
+		padding-bottom: 40px
+		margin-bottom: 60px
+		&:after		
+			position: absolute
+			content: ' '
+			bottom: 0px
+			left: 50%
+			transform: translateX(-50%)
+			width: 100px
+			height: 4px
+			background-color: #0F2742
+
+	&__address
+		font-size: 36px
+		line-height: 1.2
+		color: #0F2742
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 40px
+		font-weight: 200
+		+media(mdx)
+			font-size: 30px
+		+media(sm)
+			font-size: 25px
+
+	&__phone,
+	&__email
+		display: block
+		width: max-content
+		background-repeat: no-repeat
+		background-position: left center
+		padding-left: 34px
+		margin: 0 auto
+		font-weight: 200
+
+	&__phone
+		background-image: url(../img/icons/phone.svg)
+		background-size: 20px
+		font-size: 36px
+		line-height: 1.2
+		color: #0F2742
+		margin-bottom: 22px
+		+media(mdx)
+			font-size: 30px
+		+media(sm)
+			font-size: 25px
+
+	&__email
+		background-image: url(../img/icons/email.svg)
+		background-size: 20px 15px
+		font-size: 24px
+		line-height: 1.2	
+		

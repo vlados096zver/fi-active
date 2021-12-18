@@ -1,0 +1,98 @@
+@import 'responsive'
+
+
+.docs
+	padding-top: 60px
+	padding-bottom: 72px
+	+media(sm)
+		padding-top: 40px
+		padding-bottom: 45px
+
+	&--inner
+		padding-top: 0px
+		+media(sm)
+			padding-top: 0px
+		.breadcrumbs__list
+			li, a
+				color: #858585
+
+			a:hover
+				color: #ed7672
+
+		.breadcrumbs__list li:not(:last-child)::after
+			color: #858585
+
+		.docs__wrap
+			padding-bottom: 0px
+
+		&+.contacts
+			padding-top: 0px
+
+
+	&__wrap
+		padding-top: 65px
+		padding-bottom: 33px
+		+media(sm)
+			padding-top: 40px
+
+	&__item
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		justify-content: space-between
+		background-color: #ffffff
+		box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1)
+		border-radius: 10px
+		padding: 25px
+		padding-bottom: 0px
+		margin-bottom: 30px
+		+media(sm)
+			box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
+
+	&__subtitle
+		width: calc(100% - 140px)
+		font-size: 18px
+		line-height: 1.67
+		padding-right: 30px
+		padding-bottom: 25px
+		+media(md)
+			font-size: 17px
+			line-height: 1.5
+		+media(sm)
+			font-size: 16px
+			width: 100%
+
+	&__row
+		display: flex
+		align-items: center
+		width: 140px
+		padding-bottom: 25px
+		+media(sm)
+			width: 100%
+
+	&__col
+		display: block
+		font-size: 24px
+		line-height: 1.25
+		color: #0F2742
+		text-transform: uppercase
+		transition: 0.25s color
+		&:not(:last-child)
+			margin-right: 18px
+		svg
+			display: block
+			width: 30px
+			height: 30px
+			fill: #ed7672
+			transition: 0.25s fill
+		&:hover
+			color: #ed7672
+			svg
+				fill: #0f2742
+
+
+	.desc__decor
+		fill: #ed7672
+
+	.desc__elem
+		color: #ed7672

@@ -1,0 +1,89 @@
+@import 'responsive'
+
+.services
+	background-color: #f8f8f8
+	&__wrap
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		padding-top: 48px
+		padding-bottom: 60px
+		margin: 0 -20px
+		+media(sm)
+			padding: 30px 0
+			margin: 0px
+
+	&__item
+		width: calc(100% / 3 - 40px)
+		display: block
+		background-color: #ffffff
+		box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1)
+		border-radius: 10px
+		padding: 25px
+		padding-top: 50px
+		margin: 0 20px
+		margin-bottom: 40px
+		+media(mdx)
+			width: calc(100% / 2 - 40px)
+			padding-top: 40px
+		+media(sm)
+			width: 100%
+			max-width: 500px
+			box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
+			padding-top: 35px
+			margin: 0px auto
+			margin-bottom: 40px
+		&:hover
+			.services__decor
+				fill: #0f2742
+
+			.services__elem
+				color: #0f2742
+
+	&__image
+		margin-bottom: 20px
+		img
+			display: block
+
+	&__subtitle
+		font-size: 24px
+		line-height: 1.25
+		color: #ed7672
+		text-transform: uppercase
+		padding-bottom: 15px
+		+media(sm)
+			font-size: 20px
+
+	&__text
+		padding-bottom: 48px
+		+media(sm)
+			padding-bottom: 38px
+		p
+			font-size: 14px
+			line-height: 1.43
+			color: #0f2742
+	
+	&__decor
+		display: block
+		width: 30px
+		height: 30px
+		fill: #ed7672
+		margin: 0 auto
+		margin-bottom: 16px
+		transition: 0.25s fill
+
+	&__elem
+		display: block
+		font-size: 18px
+		line-height: 1.67
+		color: #ed7672
+		text-align: center
+		transition: 0.25s color
+
+	&__details
+		position: relative
+		background-repeat: no-repeat
+		background-size: 30px
+		background-position: top center
+		display: block
+		

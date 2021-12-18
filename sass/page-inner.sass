@@ -1,0 +1,87 @@
+@import 'responsive'
+
+.page-inner
+	&+.docs
+		padding-top: 30px
+		.docs__wrap
+			padding-top: 0px
+			padding-bottom: 0px
+		&+.contacts
+			padding-top: 0px
+
+	.breadcrumbs__list
+		li, a
+			color: #858585
+
+		a:hover
+			color: #ed7672
+
+	.breadcrumbs__list li:not(:last-child)::after
+		color: #858585
+
+	&__title
+		font-size: 48px
+		line-height: 1.25
+		color: #ed7672
+		text-transform: uppercase
+		padding-bottom: 40px
+		font-weight: normal
+		+media(mdx)
+			font-size: 40px
+		+media(sm)
+			font-size: 28px
+			padding-bottom: 30px
+
+	&__image
+		margin-bottom: 50px
+		+media(sm)
+			margin-bottom: 35px
+		img
+			display: block
+			width: 100%
+
+	&__text
+		p
+			font-size: 16px
+			line-height: 1.25
+			color: #0f2742
+			padding-bottom: 1.5em
+
+		h1
+			font-size: 24rem
+
+		h2
+			font-size: 22rem
+
+		h3
+			font-size: 18rem
+
+		h4, h5, h6
+			font-size: 16rem
+			line-height: 1.29	
+
+		h1, h2, h3, h4, h5, h6
+			color: #0f2742
+			padding-bottom: 2px
+			font-weight: 500
+
+		ul, ol
+			padding: 0px
+			margin: 0px
+			padding-bottom: 1.5em
+			li
+				position: relative
+				font-size: 1.25rem
+				line-height: 1.25
+				color: #0f2742
+				margin-bottom: 5px
+				font-weight: normal
+
+		ol
+			li
+				list-style-position: inside
+
+		a
+			display: inline-block
+			color: #0f2742
+			margin-bottom: 12px

@@ -1,0 +1,90 @@
+@import 'responsive'
+
+.desc
+	background-color: #ed7672
+	padding: 60px 0
+	&--inner
+		padding-top: 0px
+	.title
+		color: #fff
+		padding-bottom: 36px
+
+	&__text
+		margin-bottom: 22px
+		p
+			font-size: 18px
+			line-height: 1.67
+			color: #fff
+			padding-bottom: 1.5em
+			+media(md)
+				font-size: 17px
+				line-height: 1.5
+			+media(sm)
+				font-size: 16px
+
+		h1
+			font-size: 24rem
+
+		h2
+			font-size: 22rem
+
+		h3
+			font-size: 18rem
+
+		h4, h5, h6
+			font-size: 16rem
+			line-height: 1.29	
+
+		h1, h2, h3, h4, h5, h6
+			color: #fff
+			padding-bottom: 2px
+			font-weight: 500
+
+		ul, ol
+			padding: 0px
+			margin: 0px
+			padding-bottom: 1.5em
+			li
+				position: relative
+				font-size: 1.25rem
+				line-height: 1.25
+				color: #fff
+				margin-bottom: 5px
+				font-weight: normal
+
+		ol
+			li
+				list-style-position: inside
+
+		a
+			display: inline-block
+			color: #fff
+			margin-bottom: 12px
+
+	&__view
+		display: block
+		width: max-content
+		margin: 0 auto
+		&:hover
+			.desc__decor
+				fill: #0f2742
+
+			.desc__elem
+				color: #0f2742
+
+	&__decor
+		display: block
+		width: 30px
+		height: 31px
+		fill: #fff
+		margin: 0 auto
+		margin-bottom: 16px
+		transition: 0.25s fill
+
+	&__elem
+		font-size: 18px
+		line-height: 1.67
+		color: #fff
+		text-align: center
+		transition: 0.25s color
+
